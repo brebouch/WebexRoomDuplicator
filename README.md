@@ -10,10 +10,10 @@ This tool is used to duplicate Webex room members from one room to another.
 
 ## Usage
 
-####Requires the following flags
+#### Requires the following flags
 
 * --source_room -- The name of the room to copy members from
-* --dest_room -- The name of the room to copy memeber to
+* --dest_room -- The name of the room to copy member to
 * --token -- The Webex bearer token for authenticating API calls
 
 Runs from command line `python3 webex_duplicator --source_room $SOURCE_ROOM --dest_room $DEST_ROOM --token $TOKEN`
