@@ -75,7 +75,9 @@ class WebexDuplicator:
             body.update({'isModerator': True})
         response = requests.post(url, data=json.dumps(body), headers=self.webex_header)
         if 199 < response.status_code < 300:
-            return response.json()
+            print('Successfully added user: ' + user)
+        else:
+            print('Failed to add user, http error: ' + response.text)
 
     def get_dst_emails(self):
         for s in self.dst_room_members:
